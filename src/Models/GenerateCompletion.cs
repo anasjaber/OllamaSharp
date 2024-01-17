@@ -60,6 +60,12 @@ namespace OllamaSharp.Models
 		/// </summary>
 		[JsonPropertyName("raw")]
 		public bool Raw { get; set; }
+
+		/// <summary>
+		/// The format to return a response in. Currently the only accepted value is json
+		/// </summary>
+		[JsonPropertyName("format")]
+		public string Format { get; set; };
 	}
 
 	public class GenerateCompletionResponseStream
